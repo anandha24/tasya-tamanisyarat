@@ -58,8 +58,8 @@ Route::Post('/login', [halaman_controller::class, 'loginValidasi']);
 
 Route::post('/register', [halaman_controller::class, 'daftarValidasi']);
 
-// Route::patch('/tasyas/{tasya}', [TASYAController::class, 'update'])
-//     ->name('tasyas.update');
+Route::patch('/tasyas/{tasya}', [TASYAController::class, 'update'])
+    ->name('tasyas.update');
 
 Route::resource('tasyas', TASYAController::class);
 
