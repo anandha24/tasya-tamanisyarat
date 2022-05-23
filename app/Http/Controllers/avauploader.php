@@ -34,16 +34,17 @@ class avauploader extends Controller
         $path = $request->berkas->move('image',$namaFile);
         // echo "Variabel path berisi: $path <br>";
         $pathBaru = asset('image/'.$namaFile);
+        $pathSejati = "https://tasya-tamanisyarat.herokuapp.com/image/".$namaFile;
         // echo "Proses Upload Berhasil, file berada di : <a href='$pathBaru'>$pathBaru</a>" ;
         $cek = ava::where('email_user',Session::get('email_user'))->first();
         if($cek){
             ava::where('email_user',Session::get('email_user'))->first()->delete();
-            File::delete($pathBaru);
+            File::delete($pathSejati);
             ava::create([
             'email_user' => Session::get('email_user'),
             'nama_user' => $request->nama,
             'nama_file' => $namaFile,
-            'path' => $pathBaru,
+            'path' => $pathSejati,
         ]);
         $nama = $cek -> nama_user;
         $email = $cek -> email_user;
@@ -52,7 +53,7 @@ class avauploader extends Controller
             'email_user' => Session::get('email_user'),
             'nama_user' => $request->nama,
             'nama_file' => $namaFile,
-            'path' => $pathBaru,
+            'path' => $pathSejati,
         ]);
         $nama = $cek -> nama_user;
         $email = $cek -> email_user;
