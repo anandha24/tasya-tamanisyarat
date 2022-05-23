@@ -103,7 +103,8 @@
         <div class="row min-vh-25 h-100 position-absolute top-50 start-0 w-100">
             <div class="col-3 col-sm-6 col-lg-8 position-absolute top-50 start-50 translate-middle min-vw-25 w-50 min-vh-25 h-50">
                 <form action="{{ url('/login') }}" method="POST" autocomplete="on" id="formulir">
-                    @csrf
+                    <!-- @csrf -->
+                    <meta name="csrf-token" content="{{ csrf_token() }}">
                     <table class="table table-hover table-borderless table-responsive caption-top">
                         <caption>Silahkan Login:</caption>
                         <tr>
