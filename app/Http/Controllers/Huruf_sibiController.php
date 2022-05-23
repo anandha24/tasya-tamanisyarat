@@ -682,35 +682,35 @@ class Huruf_sibiController extends Controller
 
         $kata01 = new \stdClass();
         $kata01 -> abjad = "Bahagia";
-        $kata01 -> gambar = "\img\kata sifat\Bahagia.png";
+        $kata01 -> gambar = "\img\Kata sifat\Bahagia.png";
 
         $kata02 = new \stdClass();
         $kata02 -> abjad = "Bingung";
-        $kata02 -> gambar = "\img\kata sifat\Bingung.png";
+        $kata02 -> gambar = "\img\Kata sifat\Bingung.png";
 
         $kata03 = new \stdClass();
         $kata03 -> abjad = "Gembira";
-        $kata03 -> gambar = "\img\kata sifat\Gembira.png";
+        $kata03 -> gambar = "\img\Kata sifat\Gembira.png";
 
         $kata04 = new \stdClass();
         $kata04 -> abjad = "Kecewa";
-        $kata04 -> gambar = "\img\kata sifat\Kecewa.png";
+        $kata04 -> gambar = "\img\Kata sifat\Kecewa.png";
 
         $kata05 = new \stdClass();
         $kata05 -> abjad = "Marah";
-        $kata05 -> gambar = "\img\kata sifat\Marah.png";
+        $kata05 -> gambar = "\img\Kata sifat\Marah.png";
 
         $kata06 = new \stdClass();
         $kata06 -> abjad = "Sedih";
-        $kata06 -> gambar = "\img\kata sifat\Sedih.png";
+        $kata06 -> gambar = "\img\Kata sifat\Sedih.png";
 
         $kata07 = new \stdClass();
         $kata07 -> abjad = "Senang";
-        $kata07 -> gambar = "\img\kata sifat\Senang.png";
+        $kata07 -> gambar = "\img\Kata sifat\Senang.png";
 
         $kata08 = new \stdClass();
         $kata08 -> abjad = "Takut";
-        $kata08 -> gambar = "\img\kata sifat\Takut.png";
+        $kata08 -> gambar = "\img\Kata sifat\Takut.png";
 
         $kata = collect([$kata01, $kata02, $kata03, $kata04, $kata05, $kata06, $kata07, $kata08]);
 
@@ -727,35 +727,35 @@ class Huruf_sibiController extends Controller
 
         $kata01 = new \stdClass();
         $kata01 -> abjad = "Bahagia";
-        $kata01 -> gambar = "\img\kata sifat\Bahagia.png";
+        $kata01 -> gambar = "\img\Kata sifat\Bahagia.png";
 
         $kata02 = new \stdClass();
         $kata02 -> abjad = "Bingung";
-        $kata02 -> gambar = "\img\kata sifat\Bingung.png";
+        $kata02 -> gambar = "\img\Kata sifat\Bingung.png";
 
         $kata03 = new \stdClass();
         $kata03 -> abjad = "Gembira";
-        $kata03 -> gambar = "\img\kata sifat\Gembira.png";
+        $kata03 -> gambar = "\img\Kata sifat\Gembira.png";
 
         $kata04 = new \stdClass();
         $kata04 -> abjad = "Kecewa";
-        $kata04 -> gambar = "\img\kata sifat\Kecewa.png";
+        $kata04 -> gambar = "\img\Kata sifat\Kecewa.png";
 
         $kata05 = new \stdClass();
         $kata05 -> abjad = "Marah";
-        $kata05 -> gambar = "\img\kata sifat\Marah.png";
+        $kata05 -> gambar = "\img\Kata sifat\Marah.png";
 
         $kata06 = new \stdClass();
         $kata06 -> abjad = "Sedih";
-        $kata06 -> gambar = "\img\kata sifat\Sedih.png";
+        $kata06 -> gambar = "\img\Kata sifat\Sedih.png";
 
         $kata07 = new \stdClass();
         $kata07 -> abjad = "Senang";
-        $kata07 -> gambar = "\img\kata sifat\Senang.png";
+        $kata07 -> gambar = "\img\Kata sifat\Senang.png";
 
         $kata08 = new \stdClass();
         $kata08 -> abjad = "Takut";
-        $kata08 -> gambar = "\img\kata sifat\Takut.png";
+        $kata08 -> gambar = "\img\Kata sifat\Takut.png";
 
         $kata = collect([$kata01, $kata02, $kata03, $kata04, $kata05, $kata06, $kata07, $kata08]);
 
