@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="/css\bootstrap.min.css">
     <script src="/js\bootstrap.js"></script>
     <script src="/jquery-3.6.0.js"></script>
@@ -132,8 +133,7 @@
         <div class="row min-vh-25 h-100 position-absolute top-50 start-0 w-100">
             <div class="col-3 col-sm-6 col-lg-8 position-absolute top-50 start-50 translate-middle min-vw-25 w-50 min-vh-25 h-50">
                 <form action="{{ route('tasyas.store') }}" method="POST" autocomplete="on" id="formulir">
-                    <!-- @csrf -->
-                    <meta name="csrf-token" content="{{ csrf_token() }}">
+                    @csrf
                     <table class="table table-hover table-borderless table-responsive caption-top">
                         <caption>Silahkan Register:</caption>
                         <tr>
