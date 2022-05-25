@@ -264,6 +264,7 @@ class halaman_controller extends Controller
         Session::forget('name');
         Session::forget('email_user');
         Session::forget('login');
+        Session::forget('admin');
         return redirect('/index');
     }
 
@@ -273,6 +274,7 @@ class halaman_controller extends Controller
         Session::forget('name');
         Session::forget('email_user');
         Session::forget('login');
+        Session::forget('admin');
         return redirect('/index');
     }
 
