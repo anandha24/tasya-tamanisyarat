@@ -28,7 +28,7 @@
               <!-- left column -->
               <div class="col-md-3">
                 <div class="text-center">
-                  <img src={{ $image == null?"https://www.shareicon.net/data/128x128/2016/06/10/586098_guest_512x512.png":"$image" }} class="avatar img-circle img-thumbnail" alt="avatar">
+                  <img src={{ $image == null?"https://www.shareicon.net/data/128x128/2016/06/10/586098_guest_512x512.png":"$image" }} class="img-thumbnail" alt="avatar" style="object-fit: scale-down;" width="128">
                   <h6>Upload Photo</h6>
 
                   <form method="post" action="{{ url('/ava')}}"

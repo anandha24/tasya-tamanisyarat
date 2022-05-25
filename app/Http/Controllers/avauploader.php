@@ -39,12 +39,12 @@ class avauploader extends Controller
         $cek = ava::where('email_user',Session::get('email_user'))->first();
         if($cek){
             ava::where('email_user',Session::get('email_user'))->first()->delete();
-            File::delete($pathSejati);
+            File::delete($pathBaru);
             ava::create([
             'email_user' => Session::get('email_user'),
             'nama_user' => $request->nama,
             'nama_file' => $namaFile,
-            'path' => $pathSejati,
+            'path' => $pathBaru,
         ]);
         $nama = $cek -> nama_user;
         $email = $cek -> email_user;
@@ -53,7 +53,7 @@ class avauploader extends Controller
             'email_user' => Session::get('email_user'),
             'nama_user' => $request->nama,
             'nama_file' => $namaFile,
-            'path' => $pathSejati,
+            'path' => $pathBaru,
         ]);
         $nama = $cek -> nama_user;
         $email = $cek -> email_user;

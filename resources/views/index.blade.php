@@ -14,9 +14,9 @@
                             <div class="col-sm-10 col-lg-8">
                                 <h5 class="text text-uppercase mb-3 animated slideInDown" style="color: #aa26da;">Kursus Online Terbaik</h5>
                                 <h1 class="display-3 text-white animated slideInDown">Platform Belajar Bahasa Isyarat Terbaik</h1>
-                                <p class="fs-5 text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea sanctus eirmod elitr.</p>
-                                <a href="" class="btn py-md-3 px-md-5 me-3 animated slideInLeft" style="background-color: #aa26da; color: #fff;">Baca Lebih Lanjut</a>
-                                <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Gabung Sekarang</a>
+                                <p class="fs-5 text-white mb-4 pb-2">Ayo Belajar bersama kami demi menghubungkan bersama, menghilangkan jarak komunikasi dengan berbicara pada teman tuli.</p>
+                                <a href="/about" class="btn py-md-3 px-md-5 me-3 animated slideInLeft" style="background-color: #aa26da; color: #fff;">Baca Lebih Lanjut</a>
+                                <a href="/daftar" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Gabung Sekarang</a>
                             </div>
                         </div>
                     </div>
@@ -30,9 +30,9 @@
                             <div class="col-sm-10 col-lg-8">
                             <h5 class="text text-uppercase mb-3 animated slideInDown" style="color: #aa26da;">Kursus Online Terbaik</h5>
                                 <h1 class="display-3 text-white animated slideInDown">Belajar Bahasa Isyarat Dari Mana saja, Kapan Saja</h1>
-                                <p class="fs-5 text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea sanctus eirmod elitr.</p>
-                                <a href="" class="btn py-md-3 px-md-5 me-3 animated slideInLeft" style="background-color: #aa26da; color: #fff;">Baca Lebih Lanjut</a>
-                                <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Gabung Sekarang</a>
+                                <p class="fs-5 text-white mb-4 pb-2">Mempelajari Bahasa Isyarat tanpa batas ruang dan waktu, selalu menemanimu untuk bisa berkembang berteman dengan teman tuli.</p>
+                                <a href="/about" class="btn py-md-3 px-md-5 me-3 animated slideInLeft" style="background-color: #aa26da; color: #fff;">Baca Lebih Lanjut</a>
+                                <a href="/daftar" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Gabung Sekarang</a>
                             </div>
                         </div>
                     </div>
@@ -53,7 +53,7 @@
                         <div class="p-4">
                             <i class="fa fa-3x fa-graduation-cap mb-4" style="color: #aa26da;"></i>
                             <h5 class="mb-3">Tokoh-Tokoh Inspirasional</h5>
-                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                            <p>Inspirasi bagimu karena dengan segala keterbatasannya teman tuli bisa maju bersama kita</p>
                         </div>
                     </div>
                 </div>
@@ -62,7 +62,7 @@
                         <div class="p-4">
                             <i class="fa fa-3x fa-globe mb-4" style="color: #aa26da;"></i>
                             <h5 class="mb-3">Kursus Online</h5>
-                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                            <p>Tempat dimana kamu bisa belajar secara aktif dengan gambar dan video yang akan masuk dalam memori kamu</p>
                         </div>
                     </div>
                 </div>
@@ -71,7 +71,7 @@
                         <div class="p-4">
                             <i class="fa fa-3x fa-home mb-4" style="color: #aa26da;"></i>
                             <h5 class="mb-3">Bahasa Isyarat</h5>
-                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                            <p>Bahasa indah yang tak kalah dengan bahasa manapun, mampu menghubungkan kita dengan dunia yang tak terkira</p>
                         </div>
                     </div>
                 </div>
@@ -80,7 +80,7 @@
                         <div class="p-4">
                             <i class="fa fa-3x fa-book-open mb-4" style="color: #aa26da;"></i>
                             <h5 class="mb-3">Bahasa SIBI</h5>
-                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                            <p>Sistem Bahasa Isyarat yang menjadi standar di Indonesia</p>
                         </div>
                     </div>
                 </div>
@@ -101,9 +101,13 @@
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                     <h6 class="section-title bg-white text-start pe-3" style="color: #aa26da;">Tentang Kami</h6>
-                    <h1 class="mb-4">Selamat datang di Tasya</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                    <h1 class="mb-4">Selamat datang di TASYA</h1>
+                    <p class="mb-4">TASYA (Taman Isyarat) adalah sebuah platform pembelajaran bahasa isyarat untuk kita bisa terhubung dengan teman tuli.</p>
+                    <p class="mb-4">TASYA Lahir karena tidak
+semua manusia bisa berkomunikasi seperti biasa secara lisan. Berbeda untuk
+teman tuli, dia harus menggunakan bahasa isyarat agar bisa berkomunikasi. Oleh karena itu, Lahirlah TASYA Untuk membantu teman tuli dan masyarakat secara luas di
+Indonesia untuk memahami bahasa isyarat, agar tidak ada ketimpangan
+dalam berkomunikasi sesama manusia.</p>
                     <div class="row gy-2 gx-4 mb-4">
                         <!-- <div class="col-sm-6">
                             <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Skilled Instructors</p>
@@ -380,34 +384,34 @@
             <div class="owl-carousel testimonial-carousel position-relative">
                 <div class="testimonial-item text-center">
                     <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
+                    <h5 class="mb-0">Nada Dewina</h5>
+                    <p>Mahasiswi</p>
                     <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    <p class="mb-0">"Platform yang mudah dijangkau memudahkan saya untuk belajar dan makin terhubung dengan teman tuli saya."</p>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
+                    <h5 class="mb-0">Alfred Santoso</h5>
+                    <p>Pemerhati Bahasa</p>
                     <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    <p class="mb-0">"Sebuah Terobosan baru yang dapat menyinari jalan untuk saling terhubung antar sesama."</p>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
+                    <h5 class="mb-0">Budi Taslim</h5>
+                    <p>Relawan Sosial</p>
                     <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    <p class="mb-0">"Dengan adanya TASYA saya harap masyarakat dapat bisa semakin mengerti dan berkomunikasi demi terciptanya sosial yang lebih inklusif."</p>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-4.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
+                    <h5 class="mb-0">Rizka Shalendry</h5>
+                    <p>Aktivis Disabilitas</p>
                     <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    <p class="mb-0">"Aplikasi ini sangat membantu kami dan juga teman tuli untuk lebih cepat belajar dan terhubung."</p>
                     </div>
                 </div>
             </div>

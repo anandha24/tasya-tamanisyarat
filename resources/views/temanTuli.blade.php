@@ -8,7 +8,7 @@
 h1 {
     text-align: center;
     padding:50px;
-    font-size: 80px;
+    font-size: 7vw;
 }
 h2{
     padding:10px;

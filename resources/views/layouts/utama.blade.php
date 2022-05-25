@@ -124,8 +124,8 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Newsletter</h4>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <h4 class="text-white mb-3">Secarik Koran</h4>
+                    <p>Yuk Selalu terhubung dengan kami!</p>
                     <div class="position-relative mx-auto" style="max-width: 400px;">
                         <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Email Kamu">
                         <button type="button" class="btn py-2 position-absolute top-0 end-0 mt-2 me-2" style="background-color: #aa26da; color: #fff;">Daftar</button>

@@ -151,6 +151,9 @@ class halaman_controller extends Controller
                 Session::put('login',TRUE);
                 return redirect('belajar');
             }
+        else{
+            return redirect('/masuk');
+        }
         }
     }
 

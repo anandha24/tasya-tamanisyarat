@@ -81,14 +81,14 @@
 </style>
 
 <body>
-   
+
 <div class="offcanvas offcanvas-start w-25 bg-light" tabindex="-1" id="offcanvas" data-bs-keyboard="false" data-bs-backdrop="false">
     <div class="offcanvas-header">
         <h6 class="offcanvas-title d-none d-sm-block text-black" id="offcanvas">Menu</h6>
         <button type="button" class="btn-close text-reset text-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body px-0">
-      
+
         <div class="container">
     <div class="row flex-nowrap">
         <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-light">
@@ -251,7 +251,7 @@
             <div class="d-flex bd-highlight mb-3 ">
                 <div  class="me-auto p-2 bd-highlight" style="padding: 100px;">
                     <button id="btn" type="button" class="btn btn-outline-dark btn-lg {{ $index == 0? "disabled":"active" }}"
-                        style="width: 200px; height: 80px; ""> <a href="\kata\{{ $jenis }}\{{ $index == 0? $index:$index - 1 }}">Back</a></button>
+                        style="width: 120px; height: 80px; ""> <a href="\kata\{{ $jenis }}\{{ $index == 0? $index:$index - 1 }}">Back</a></button>
                 </div>
                 @php
                     if($jenis == "ganti"){
@@ -264,10 +264,13 @@
                         $end = 8;
                     }
                 @endphp
-
+                 <div  class="position-absolute bottom-0 start-50 translate-middle-x p-2 bd-highligh" style="padding: 100px;">
+                    <button id="btn" type="button" class="btn btn-outline-dark btn-lg"
+                        style="width: 160px; height: 80px; "><a href="/belajar">Ke Beranda</a></button>
+                </div>
                 <div  class="p-2 bd-highligh" style="padding: 100px;">
                     <button id="btn" type="button" class="btn btn-outline-dark btn-lg {{ $index == $end? "disabled":"active" }}"
-                        style="width: 200px; height: 80px; "><a href="\kata\{{ $jenis }}\{{ $index == $end? $index:$index + 1 }}">Next</a></button>
+                        style="width: 120px; height: 80px; "><a href="\kata\{{ $jenis }}\{{ $index == $end? $index:$index + 1 }}">Next</a></button>
                 </div>
             </div>
         </div>
