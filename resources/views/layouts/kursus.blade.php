@@ -35,7 +35,6 @@
     <script src="/lib/easing/easing.min.js"></script>
     <script src="/lib/waypoints/waypoints.min.js"></script>
     <script src="/lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="\js\bootstrap.bundle.js"></script>
 
     <!-- Template Javascript -->
     <script src="{{ URL::asset('js/main.js') }}"></script>
