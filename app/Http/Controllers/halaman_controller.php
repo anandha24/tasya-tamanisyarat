@@ -262,4 +262,13 @@ class halaman_controller extends Controller
         return redirect('/index');
     }
 
+    public function hapus(){
+        TASYA::where('email_user', Session::get('email_user'))->first()->delete();
+        ava::where('email_user',Session::get('email_user'))->first()->delete();
+        Session::forget('name');
+        Session::forget('email_user');
+        Session::forget('login');
+        return redirect('/index');
+    }
+
 }

@@ -99,3 +99,5 @@ route::get('/kata', [Huruf_sibiController::class, 'ganti_orang'])->middleware('k
 route::get('/team', [halaman_controller::class, 'tim']);
 
 route::get('/course', [halaman_controller::class, 'course']);
+
+route::get('/hapus', [halaman_controller::class], 'hapus');
