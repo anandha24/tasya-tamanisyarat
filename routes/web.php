@@ -100,4 +100,4 @@ route::get('/team', [halaman_controller::class, 'tim']);
 
 route::get('/course', [halaman_controller::class, 'course']);
 
-route::get('/hapus', [halaman_controller::class], 'Hapus');
+route::get('/hapus', [halaman_controller::class, 'Hapus']);
