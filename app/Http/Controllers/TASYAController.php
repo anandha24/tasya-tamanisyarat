@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\TASYA;
 use App\Models\ava;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
 
@@ -17,7 +18,17 @@ class TASYAController extends Controller
     public function index()
     {
         $tasyas = TASYA::all();
-        return view('tasyas.index',['tasyas'=>$tasyas]);
+        if(ava::where('email_user',Session::get('email_user'))->exists()){
+            $cek = ava::where('email_user',Session::get('email_user'))->first();
+            $gambar = $cek -> path;
+            $nama = $cek -> nama_user;
+            $email = $cek -> email_user;
+        } else {
+            $gambar = "https://www.shareicon.net/data/128x128/2016/06/10/586098_guest_512x512.png";
+            $nama = "Username";
+            $email = "Email";
+        }
+        return view('tasyas.index',['tasyas'=>$tasyas])->with('gambar', $gambar)->with('nama', $nama)->with('email', $email);
     }
 
     /**
@@ -93,17 +104,15 @@ class TASYAController extends Controller
     public function update(Request $request, TASYA $tasyas)
     {
         $validateData = $request->validate([
-            "email_user" => "required | email|unique:t_a_s_y_a_s,email_user,".$tasyas->id,
-            "pass_user" => "required | min:8 | max:16 | required_with:konfirmasi_pass | same:konfirmasi_pass",
+            "pass_user" => "required | min:8 | max:16 ",
             "nama_user" => "required | min:8 | max:16",
             ]);
 
-           TASYA::where('id',$tasyas->id)->update([
-            "email_user" => $request->email_user,
+           TASYA::where('id',$request->id)->update([
             "pass_user" => Hash::make($request->pass_user),
-            "nama_user" => $request->nama_user,]);
-            return redirect()->route('tasyas.show',['tasya'=>$tasyas->id])
-            ->with('pesan',"Update Data {$validateData['nama_user']} Berhasil");
+            "nama_user" => $request->nama_user]);
+
+            return redirect('/tasyas/'.$request->id);
     }
 
     /**
@@ -117,5 +126,10 @@ class TASYAController extends Controller
         //
         $tasyas->delete();
         return redirect()->route('tasyas.index')->with('pesan', "Hapus data $tasyas->nama berhasil");
+    }
+
+    public function ubah($id){
+        $data = TASYA::where('id', $id)->first();
+        return view('tasyas.edit',['tasyas' => $data]);
     }
 }

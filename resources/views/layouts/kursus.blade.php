@@ -22,11 +22,11 @@
     <link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href=" {{ URL::asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ URL::asset('css/bootstrap.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
     <!-- Template Stylesheet -->
-    <link href="/css/style.css" rel="stylesheet">
+    <link href="{{ URL::asset('css/style.css') }}" rel="stylesheet">
 
         <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -35,9 +35,10 @@
     <script src="/lib/easing/easing.min.js"></script>
     <script src="/lib/waypoints/waypoints.min.js"></script>
     <script src="/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="\js\bootstrap.bundle.js"></script>
 
     <!-- Template Javascript -->
-    <script src="/js/main.js"></script>
+    <script src="{{ URL::asset('js/main.js') }}"></script>
 </head>
 
 <script>

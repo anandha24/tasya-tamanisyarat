@@ -149,6 +149,11 @@ class halaman_controller extends Controller
                 Session::put('name',$data->nama_user);
                 Session::put('email_user',$data->email_user);
                 Session::put('login',TRUE);
+                Session::put('username', $data->nama_user);
+                if($email == "admin@mail.com"){
+                    Session::put('admin', True);
+                    return redirect('/tasyas');
+                }
                 return redirect('belajar');
             }
         else{
@@ -269,6 +274,11 @@ class halaman_controller extends Controller
         Session::forget('email_user');
         Session::forget('login');
         return redirect('/index');
+    }
+
+    public function ubah($id){
+        $data = TASYA::where('id', $id)->first();
+        return view('tasyas.edit',['tasyas' => $data]);
     }
 
 }

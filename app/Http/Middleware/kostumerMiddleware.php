@@ -38,7 +38,11 @@ class kostumerMiddleware
         //     return redirect('/login')->with('alert','Password atau Email, Salah!');
         // }
         if(Session::get('login')){
+            if(Session::get('admin')){
+                return redirect('/tasyas');
+            }else{
             return $next($request);
+            }
         }else{
             return redirect('/login')->with('alert','Kamu harus login dulu');
         }

@@ -65,9 +65,17 @@
                     </div>
                 </div>
                 <a href="/tokoh" class="nav-item nav-link">Tokoh</a>
-                <a href="/keluar" class="nav-item nav-link @yield('keluar')" style="color:goldenrod">Logout</a>
+                @if (Session::get('login'))
+                    <a href="/keluar" class="nav-item nav-link @yield('keluar')" style="color:goldenrod">Logout</a>
+                @else
+                    <a href="/masuk" class="nav-item nav-link @yield('keluar')" style="color:goldenrod">Login</a>
+                @endif
             </div>
-            <a href="/masuk" class="btn py-4 px-lg-5 d-none d-lg-block" style="background-color: #aa26da; color: #fff;">Masuk | Daftar<i class="fa fa-arrow-right ms-3"></i></a>
+            @if (Session::get('login'))
+                <a href="/belajar" class="btn py-4 px-lg-5 d-none d-lg-block" style="background-color: #aa26da; color: #fff;">Halo, {{ Session::get('username') }}<i class="fa fa-arrow-right ms-3"></i></a>
+            @else
+                <a href="/masuk" class="btn py-4 px-lg-5 d-none d-lg-block" style="background-color: #aa26da; color: #fff;">Masuk | Daftar<i class="fa fa-arrow-right ms-3"></i></a>
+            @endif
         </div>
     </nav>
     <!-- Navbar End -->
