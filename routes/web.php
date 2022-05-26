@@ -59,9 +59,9 @@ Route::Post('/login', [halaman_controller::class, 'loginValidasi']);
 Route::post('/register', [halaman_controller::class, 'daftarValidasi']);
 
 Route::patch('/tasyas/{tasya}', [TASYAController::class, 'update'])
-    ->name('tasyas.update');
+    ->name('tasyas.update')->middleware('admin');
 
-Route::resource('tasyas', TASYAController::class);
+Route::resource('tasyas', TASYAController::class)->middleware('admin');
 
 Route::get('/ava', [avauploader::class, 'ava']);
 Route::post('/ava', [avauploader::class, 'prosesupload']);
