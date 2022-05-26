@@ -58,7 +58,11 @@
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Halaman</a>
                     <div class="dropdown-menu fade-down m-0">
-                        <a href="/belajar" class="dropdown-item">Kursus</a>
+                         @if (Session::get('admin'))
+                            <a href="/tasyas" class="dropdown-item">Dashboard Admin</a>
+                        @else
+                            <a href="/belajar" class="dropdown-item">Kursus</a>
+                        @endif
                         <a href="/about" class="dropdown-item @yield('kel')">Kelompok Kami</a>
                         <!-- <a href="/testimoni" class="dropdown-item @yield('tes')">Testimoni</a>
                         <a href="/404" class="dropdown-item @yield('404')">Halaman 404</a> -->

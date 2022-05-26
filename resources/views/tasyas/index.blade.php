@@ -160,5 +160,9 @@
     </div>
   </div>
 </div>
+<div class="position-absolute bottom-0 start-50 translate-middle-x p-2" style="padding: 100px;">
+<button id="btn" type="button" class="btn btn-outline-dark"
+    style="width: 160px; height: 80px; color: grey;"><a href="/index">Ke Beranda</a></button>
+</div>
 </body>
 </html>
