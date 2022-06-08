@@ -17,14 +17,10 @@ class admin
      */
     public function handle(Request $request, Closure $next)
     {
-        if(Session::get('login')){
-            if(Session::get('admin')){
-                return $next($request);
-            }else{
-                return redirect('/belajar');
-            }
+        if(Session::get('admin')){
+            return $next($request);
         }else{
-            return redirect('/login')->with('alert','Kamu harus login dulu');
-        }
+            return redirect('/belajar');
     }
+}
 }

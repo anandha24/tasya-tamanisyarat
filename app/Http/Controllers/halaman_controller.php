@@ -22,7 +22,7 @@ class halaman_controller extends Controller
     public function belajar()
     {
         // $db = ava::where('email_user', Session::get('email_user'))->first();
-        if(ava::where('email_user',Session::get('email_user'))->exists()){
+        if(TASYA::where('email_user',Session::get('email_user'))->exists()){
             $cek = ava::where('email_user',Session::get('email_user'))->first();
             $gambar = $cek -> path;
             $nama = $cek -> nama_user;

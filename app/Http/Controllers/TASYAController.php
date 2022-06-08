@@ -67,8 +67,11 @@ class TASYAController extends Controller
             "nama_file" => "kosong",
             "path" => "https://www.shareicon.net/data/128x128/2016/06/10/586098_guest_512x512.png",
         ]);
-        return redirect('index');
-
+        Session::put('name',$request->nama_user);
+        Session::put('email_user',$request->email_user);
+        Session::put('login',TRUE);
+        Session::put('username', $request->nama_user);
+        return redirect('/belajar');
     }
 
     /**
